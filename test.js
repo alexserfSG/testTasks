@@ -89,7 +89,7 @@ class Player extends Creatures {
         this.name = (typeof name === 'string')? name : 'Guest';
         this.healthPotion = {
             quantity: 4,
-            healPower: Math.ceil(this.health * 0.3)
+            healPower: Math.ceil(this.maxHealth * 0.3)
         };
     }
 
