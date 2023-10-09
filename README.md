@@ -9,7 +9,9 @@ Alex хорошенько врезал!
 У Alex осталось 19 здоровья
 Вы выпили зелье. Теперь у вас 34 здоровья!
 Alex хорошенько врезал!
+
 Бой окончен. Гаишник повержен.
+
 RandomMonster {
   maxHealth: 50,
   health: 0,
@@ -18,6 +20,7 @@ RandomMonster {
   damage: { minDamage: 4, maxDamage: 7 },
   name: 'Гаишник'
 }
+
 Player {
   maxHealth: 50,
   health: 34,
