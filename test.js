@@ -86,7 +86,7 @@ class RandomMonster extends Creatures {
 class Player extends Creatures {
     constructor(name) {
         super();
-        this.name = (typeof name === 'string')? name : 'Guest';
+        this.name = (typeof name === 'string' && name.length)? name : 'Guest';
         this.healthPotion = {
             quantity: 4,
             healPower: Math.ceil(this.maxHealth * 0.3)
