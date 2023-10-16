@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="libs/Views/js/jquery.js" type="text/javascript"></script>
+    <style>
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            width: 50px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-column">
+        <button type="button" class="row" id="b1">1</button>
+        <button type="button" class="row" id="b2">2</button>
+        <button type="button" class="row" id="b3">3</button>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+
+    $('.row').click(() => {
+
+        if (!localStorage.getItem('b1')) {
+            $('#b1').css('order',1);
+            localStorage.setItem('b1', 1);
+        } else if (!localStorage.getItem('b2')) {
+            $('#b2').css('order',2);
+            localStorage.setItem('b2', 2);
+        } else {
+            $('#b3').css('order',3);
+            localStorage.setItem('b3', 3);
+            localStorage.clear();
+            $('.row').css('order',0);
+        }
+    });
+
+</script>
+
+</html>
