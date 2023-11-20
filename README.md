@@ -1,2 +1,24 @@
-Все задачи были выполнены, используя фреймворк Laravel 10 , IDE PHPStorm . 
-Весь код был проверен на работоспособность. Задачи очень понравились. Буду рад работать у Вас, если всех всё устроит =)
+# PartStringHighlight
+
+Библиотека PartStringHighlight позволяет найти подстроку в строке и вернуть данную 
+строку с выделенной посредством скобок () подстрокой. Регистр строк УЧИТЫВАЕТСЯ.
+
+
+## Требования
+
+- PHP 8.0
+
+
+## Установка
+
+```bash
+composer require alex-s-otus/composer-homework
+```
+
+## Usage
+
+```php
+<?php
+$stringHighlight = new \AlexSOtus\ComposerHomework\PartStringHighlight();
+echo $stringHighlight->stringHighlight("abc","a");
+```
